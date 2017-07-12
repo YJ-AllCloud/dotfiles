@@ -1,17 +1,29 @@
 # DotFiles
-ZSH &amp; VIM customizations
+My custom ZSH &amp; VIM dotfiles. Install with one command.
 
 ## How to install
 
 ```bash
 bash -c "$(curl -fsSL https://github.com/yossij/dotfiles/raw/master/install.sh)"
 ```
+### Oh My Zsh
 
-## Themes
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Alias CheatSheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
+
+### Used themes
 
 - **ZSH** - [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
 - **VIM** - [molokai](https://github.com/tomasr/molokai)
 
-## How to run ZShell
+### How to run zsh
 
-Type `zsh` to switch the shell
+Run `zsh` to switch to zshell
+
+### How to change zsh to be the default shell
+
+Run `chsh -s /bin/zsh`
+
+### How to uninstall
+
+Run `uninstall_oh_my_zsh` from the `zsh` command-line.
