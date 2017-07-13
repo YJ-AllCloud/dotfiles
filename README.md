@@ -1,11 +1,21 @@
 # DotFiles
-My custom ZSH &amp; VIM dotfiles. Install with one command.
+My custom ZSH &amp; VIM dotfiles.
 
 ## How to install
 
 ```bash
 bash -c "$(curl -fsSL https://github.com/yossij/dotfiles/raw/master/install.sh)"
 ```
+### iTerm users
+
+##### Switch to a compatible font:
+- Select iTerm **Preferences**
+- Select tab **Profiles**
+- Select your profile
+- Select tab **Text** and change the fonts to:
+  - Font: `Knack Nerd Font`
+  - Non-ASCII Font: `Knack Nerd Font`
+
 ### Oh My Zsh
 
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)

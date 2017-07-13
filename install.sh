@@ -1,18 +1,21 @@
 #! /bin/bash
 
-# Determine OS and install ZSH
+# Determine OS and install ZSH & fonts
 
 # yum
 if [[ `command -v yum | grep -o yum` == 'yum' ]]; then
     sudo yum upgrade -y && sudo yum install -y zsh git wget
+    mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 
 # mac
 elif [[ `command -v brew | grep -o brew` == 'brew' ]]; then
     brew install -y zsh zsh-completions git wget
+    brew tap caskroom/fonts && brew cask install font-hack-nerd-font
 
 # apt-get
 elif [[ `command -v apt-get | grep -o apt-get` == 'apt-get' ]]; then
     sudo apt-get update && sudo apt-get -y install zsh git wget
+    mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete.otf
 
 else
     echo "unsupported os"
