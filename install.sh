@@ -29,9 +29,10 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # Install Theme
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
-# install plugins using antigen
-curl -L git.io/antigen > antigen.zsh
+# install plugins
+curl -L git.io/antigen > ~/.oh-my-zsh/custom/plugins/antigen.zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # update .zshrc file
 wget https://github.com/yossij/dotfiles/raw/master/zsh/.zshrc -O ~/.zshrc
