@@ -4,7 +4,7 @@ My custom ZSH &amp; VIM dotfiles.
 ## How to install
 
 ```bash
-bash -c "$(curl -fsSL https://github.com/yossij/dotfiles/raw/dev/install.sh)"
+bash -c "$(curl -fsSL https://github.com/yossij/dotfiles/raw/master/install.sh)"
 ```
 ### iTerm users
 
