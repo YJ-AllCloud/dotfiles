@@ -18,7 +18,9 @@ plugins=(git z sublime command-not-found docker docker-compose kubectl zsh-autos
 
 source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.oh-my-zsh/custom/plugins/antigen.zsh
 alias tf='terraform'
+alias kb='kubectl'
 
 # Docker
 alias dokcer='docker'

@@ -30,14 +30,21 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 
 # install plugins
+curl -L git.io/antigen > ~/.oh-my-zsh/custom/plugins/antigen.zsh
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+git clone git://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # update .zshrc file
 wget https://github.com/yossij/dotfiles/raw/master/zsh/.zshrc -O ~/.zshrc
 
-# VIM
+### VIM
+
+# Vim theme and custom .vimrc
 mkdir -p ~/.vim/colors/
 wget https://github.com/tomasr/molokai/raw/master/colors/molokai.vim -O ~/.vim/colors/molokai.vim
 wget https://github.com/yossij/dotfiles/raw/master/vim/.vimrc -O ~/.vimrc
+
+# Install Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 echo "type 'zsh' to switch the shell"

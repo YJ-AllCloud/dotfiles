@@ -21,6 +21,11 @@ bash -c "$(curl -fsSL https://github.com/yossij/dotfiles/raw/master/install.sh)"
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Alias CheatSheet](https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet)
 
+### Used plugins
+
+- **Antigen** - plugin manager for ZSH - [Antigen](https://github.com/zsh-users/antigen)
+- **Vundle** - plugin manager for Vim - [Vundle](https://github.com/VundleVim/Vundle.vim)
+
 ### Used themes
 
 - **ZSH** - [powerlevel9k](https://github.com/bhilburn/powerlevel9k)
