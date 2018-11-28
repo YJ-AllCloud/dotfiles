@@ -20,7 +20,16 @@ source $ZSH/oh-my-zsh.sh
 source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.oh-my-zsh/custom/plugins/antigen.zsh
 alias tf='terraform'
+
+# Kubernetes
 alias kb='kubectl'
+alias kbx='kubectx'
+alias kdel='kubectl delete -f'
+alias klog='kubectl logs'
+alias kply='kubectl apply -f'
+alias kpods='kubectl get pods'
+alias knodes='kubectl get nodes'
+alias allspc='--all-namespaces'
 
 # Docker
 alias dokcer='docker'
